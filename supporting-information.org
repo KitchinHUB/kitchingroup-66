@@ -1,0 +1,92 @@
+#+TITLE: Automating data sharing through authoring tools - Supporting information
+#+LATEX_CLASS: cmu-article
+#+LaTeX_CLASS_OPTIONS:
+#+OPTIONS: toc:nil author:nil
+
+#+LaTeX_HEADER: \usepackage[utf8]{inputenc}
+#+LaTeX_HEADER: \usepackage{fixltx2e}
+#+LaTeX_HEADER: \usepackage{url}
+#+LaTeX_HEADER: \usepackage{graphicx}
+#+LaTeX_HEADER: \usepackage[version=3]{mhchem}
+#+LaTeX_HEADER: \usepackage{color}
+#+LaTeX_HEADER: \usepackage{amsmath}
+#+LaTeX_HEADER: \usepackage{textcomp}
+#+LaTeX_HEADER: \usepackage{marvosym}
+#+LaTeX_HEADER: \usepackage{wasysym}
+#+LaTeX_HEADER: \usepackage{latexsym}
+#+LaTeX_HEADER: \usepackage{amssymb}
+#+LaTeX_HEADER: \usepackage[numbers,sort&compress]{natbib}
+#+LaTeX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usepackage{attachfile}
+#+LATEX_HEADER: \usepackage{breakurl}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage{bibentry}
+#+LaTeX_HEADER: \author{John R. Kitchin \and Ana E. Van Gulick \and Lisa D. Zilinski}
+#+latex_header: \nobibliography*
+#+LATEX: \maketitle
+
+#+HTML_HEAD_EXTRA:  <style>.abstract {color: black;}</style>
+#+HTML: John R. Kitchin, Ana E. Van Gulick, and Lisa D. Zilinski
+
+* Introduction
+This supporting information provides additional context on the extent of  use of org-mode in publishing, as well as some screenshots on what org-mode looks like and how it renders into PDF and HTML.
+
+Supporting information: attachfile:supporting-information.org
+
+* Other published papers that used org-mode
+
+One of the authors (Kitchin) has used org-mode extensively in scientific publishing in over a dozen peer-reviewed papers.
+
+1. bibentry:hallenbeck-2013-effec-o2
+2. bibentry:miller-2014-simul-temper
+3. bibentry:xu-2014-probin-cover
+4. bibentry:xu-2014-relat
+5. bibentry:curnan-2014-effec-concen
+6. bibentry:kitchin-2015-data-surfac-scien
+7. bibentry:kitchin-2015-examp
+8. bibentry:mehta-2015-ident-poten
+9. bibentry:xu-2015-linear-respon
+10. bibentry:xu-2015-relat
+11. bibentry:xu-2015-tunin-oxide
+12. bibentry:boes-2015-estim-bulk
+13. bibentry:boes-2016-neural-networ
+
+Many of these papers include extensive supporting information files that include the org-mode source of the manuscript, as well as data files used in the papers.
+
+There are other examples of org-mode in the literature as well cite:khare-2012-using-org,schulte-2011-activ-docum,stanisic-2014-effec-reprod.
+
+* Tables
+This section shows an example of an org-mode table in Fig. ref:fig-table on the left, and how it is rendered in the PDF. The data in the table is automatically extracted and saved as a comma-separated value file that is attached to the PDF. The HTML version is shown in Fig.ref:fig-table-html.
+
+#+attr_latex: :placement [H]
+#+caption: Comparison of the org-mode table and table rendered in the PDF file. label:fig-table
+[[./org-pdf-table.png]]
+
+#+attr_latex: :placement [H]
+#+caption: The HTML rendered table and corresponding generated HTML code. label:fig-table-html.
+[[./html-table-embedded.png]]
+
+* Code
+Fig. ref:fig-code shows an example of a code block in org-mode and the rendered code on the right. The code is automatically extracted in the conversion and embedded in the pdf. The corresponding export to HTML is shown in Fig. ref:fig-html-code along with the generated HTML for this code block.
+
+#+attr_latex: :placement [H]
+#+caption: Comparison of code in org-mode (left), and rendered in the PDF file (right). label:fig-code
+[[./org-pdf-code.png]]
+
+
+#+attr_latex: :placement [H]
+#+caption: The HTML rendered table and the generated code. label:fig-html-code
+[[./html-embedded.png]]
+
+
+* PDF attachments
+Figure ref:fig-acrobat shows what a PDF file with attachments in it looks like in Adobe Acrobat Pro. Not all PDF readers support attachments.
+
+#+attr_latex: :width 3in :placement [H]
+#+attr_org: :width 300
+#+caption: Screenshot of PDF attachments in Adobe Acrobat. label:fig-acrobat
+[[./pdf-attachments.png]]
+
+bibliographystyle:unsrt
+
+bibliography:~/Dropbox/bibliography/references.bib
